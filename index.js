@@ -6,7 +6,7 @@ async function generateImage(prompt, negativePrompt) {
     canGenerate = false
     document.querySelector('.img-generated img').style= 'display: none'
     notifier.textContent = 'Generating, Please wait...'
-    const response = await fetch('https://api-inference.huggingface.co/models/dreamlike-art/dreamlike-anime-1.0',
+    const response = await fetch('https://api-inference.huggingface.co/models/Ojimi/anime-kawai-diffusion',
         {
             method: "POST",
             headers: {
